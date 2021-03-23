@@ -8,9 +8,18 @@
         <servlet-name>Huang</servlet-name>
         <servlet-class>com.HuangHaijian.week2.homework.HelloWorldServlet</servlet-class><!--name of servlet class-->
     </servlet>
+    <!--automatic code-->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.week3.demo.RegisterServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Huang</servlet-name>
         <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/week2/Register</url-pattern>
     </servlet-mapping>
     <!--x=5,a=x so we can say a=5
     so /hello==com.HuangHaijian.week2.homework.HelloWorldServlet

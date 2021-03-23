@@ -11,7 +11,7 @@
     <title>Register</title>
 </head>
 <body>
-<form>
+<form method="post" action="Register"><!--within doPost() in servlet-->
     <table width="700" border="1" align="center"><tr>
         <td align="center">
             New User Registration!
@@ -52,7 +52,7 @@
         <td align="center">
             Gender
             <label for="Date Of Birth">Date Of Birth</label>
-            <input type="date " name="Date Of Birth" id="Date Of Birth" placeholder="(yyyy-mm-dd)" >
+            <input type="date " name="Birthday" id="Date Of Birth" placeholder="(yyyy-mm-dd)" >
         </td>
     </tr>
     </table>
