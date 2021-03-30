@@ -8,11 +8,44 @@
         <servlet-name>Huang</servlet-name>
         <servlet-class>com.HuangHaijian.week2.homework.HelloWorldServlet</servlet-class><!--name of servlet class-->
     </servlet>
+    <!--automatic code-->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.week3.demo.RegisterServlet</servlet-class>
+    </servlet>
+    <!--<servlet>
+        <servlet-name>JDBCDemoServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.week4.homework.JDBCDemoServlet</servlet-class>
+    </servlet>-->
+    <!--<servlet>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.week4.homework.ConfigDemoServlet</servlet-class>
+    </servlet>-->
     <servlet-mapping>
         <servlet-name>Huang</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/week2/Register</url-pattern>
+    </servlet-mapping>
     <!--x=5,a=x so we can say a=5
     so /hello==com.HuangHaijian.week2.homework.HelloWorldServlet
     -->
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:sqlserver://localhost:1433;databaseName=userdb</param-value>
+    </context-param>
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>sa</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>admin123456</param-value>
+    </context-param>
 </web-app>
