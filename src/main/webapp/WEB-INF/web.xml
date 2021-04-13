@@ -13,6 +13,18 @@
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>com.HuangHaijian.week3.demo.RegisterServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.week6.homework.SearchServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.week6.homework.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConnectTest</servlet-name>
+        <servlet-class>com.HuangHaijian.week4.homework.ConnectTest</servlet-class>
+    </servlet>
     <!--<servlet>
         <servlet-name>JDBCDemoServlet</servlet-name>
         <servlet-class>com.HuangHaijian.week4.homework.JDBCDemoServlet</servlet-class>
