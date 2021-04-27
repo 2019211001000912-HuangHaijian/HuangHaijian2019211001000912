@@ -9,34 +9,42 @@
 <%@include file="header.jsp" %>
 <h1>User Info</h1>
 <%
-    User user = (User) request.getAttribute("user");
+    User u = (User) session.getAttribute("user");
 %>
 
 <table>
     <tr>
+        <td>Id:</td>
+        <td><%=u.getId()%>
+        </td>
+    </tr>
+    <tr>
         <td>Username:</td>
-        <td><%=user.getUsername()%>
+        <td><%=u.getUsername()%>
         </td>
     </tr>
     <tr>
         <td>Password:</td>
-        <td><%=user.getPassword()%>
+        <td><%=u.getPassword()%>
         </td>
     </tr>
     <tr>
         <td>Email:</td>
-        <td><%=user.getEmail()%>
+        <td><%=u.getEmail()%>
         </td>
     </tr>
     <tr>
         <td>Gender:</td>
-        <td><%=user.getGender()%>
+        <td><%=u.getGender()%>
         </td>
     </tr>
     <tr>
         <td>BirthDate:</td>
-        <td><%=user.getBirthDate()%>
+        <td><%=u.getBirthDate()%>
         </td>
+    </tr>
+    <tr>
+        <a href="updateUser">Update User</a>
     </tr>
 </table>
 <%@include file="footer.jsp" %>
