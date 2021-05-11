@@ -24,8 +24,8 @@
                             border-style:solid;
                             border-top-width:0px;
                             border-color:black;" align="center">
-            <a style="color:white;" href="home">Home</a>
-            - <a style="color:white;" href="login">Login</a>
+            <a style="color:white;" href="index.jsp">Home</a>
+            - <a style="color:white;" href="login.jsp">Login</a>
             - <a style="color:white;" href="productList">Product</a>
             - <a style="color:white;" href="#">FAQ</a>
             - <a style="color:white;" href="#">About</a>
@@ -34,27 +34,12 @@
     </tr>
     <tr height="25">
         <td align="right"><font size="18" color="blue">
-            Welcome,
-            <%
-                if (session.getAttribute("user") != null) {
-                    User user = (User) session.getAttribute("user");
-                    String username = user.getUsername();
-                    out.println(username);
-                } else {
-            %>
-            <font size="18" color="red"> Guest</font>
-            <%
-                }//end of else
-            %>
+            Welcome,<font size="18" color="red"> Guest</font>
         </font></td>
     </tr>
     <tr height="20">
         <td align="right">
-            <%
-                if (session.getAttribute("user") != null) {
-            %>
-            <br> <a href="logout">Logout</a>
-            <%}%>
+            <br> <a href="#">Logout</a>
             <br><a href="#">My Cart</a><br/>
             <a href="register.jsp">Register Here</a>
         </td>

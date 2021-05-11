@@ -33,6 +33,10 @@
         <servlet-name>UpdateUserServlet</servlet-name>
         <servlet-class>com.HuangHaijian.controller.UpdateUserServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AdminHomeServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.controller.AdminHomeServlet</servlet-class>
+    </servlet>
     <!--<servlet>
         <servlet-name>JDBCDemoServlet</servlet-name>
         <servlet-class>com.HuangHaijian.week4.homework.JDBCDemoServlet</servlet-class>
