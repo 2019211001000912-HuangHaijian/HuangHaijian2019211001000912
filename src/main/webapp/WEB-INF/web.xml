@@ -37,6 +37,30 @@
         <servlet-name>AdminHomeServlet</servlet-name>
         <servlet-class>com.HuangHaijian.controller.AdminHomeServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddProductServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.controller.AddProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductListServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.controller.ProductListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IProductDao</servlet-name>
+        <servlet-class>com.HuangHaijian.dao.IProductDao</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductDao</servlet-name>
+        <servlet-class>com.HuangHaijian.dao.ProductDao</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Category</servlet-name>
+        <servlet-class>com.HuangHaijian.model.Category</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Product</servlet-name>
+        <servlet-class>com.HuangHaijian.model.Product</servlet-class>
+    </servlet>
     <!--<servlet>
         <servlet-name>JDBCDemoServlet</servlet-name>
         <servlet-class>com.HuangHaijian.week4.homework.JDBCDemoServlet</servlet-class>
