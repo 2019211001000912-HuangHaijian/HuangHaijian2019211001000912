@@ -73,6 +73,10 @@
         <servlet-name>ShopServlet</servlet-name>
         <servlet-class>com.HuangHaijian.controller.ShopServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UserListServlet</servlet-name>
+        <servlet-class>com.HuangHaijian.controller.UserListServlet</servlet-class>
+    </servlet>
     <!--<servlet>
         <servlet-name>JDBCDemoServlet</servlet-name>
         <servlet-class>com.HuangHaijian.week4.homework.JDBCDemoServlet</servlet-class>

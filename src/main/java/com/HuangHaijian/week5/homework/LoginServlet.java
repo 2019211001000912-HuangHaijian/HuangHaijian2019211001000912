@@ -1,6 +1,6 @@
 package com.HuangHaijian.week5.homework;
 
-import com.HuangHaijian.dao.UserDao;
+import com.HuangHaijian.dao.Userdao;
 import com.HuangHaijian.model.User;
 
 import javax.servlet.*;
@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
         String Username = request.getParameter("Username");
         String Password = request.getParameter("Password");
 
-        UserDao userDao = new UserDao();
+        Userdao userDao = new Userdao();
         try {
             User user = userDao.findByUsernamePassword(con, Username, Password);
             if (user != null) {

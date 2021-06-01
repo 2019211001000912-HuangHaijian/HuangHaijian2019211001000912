@@ -1,6 +1,6 @@
 package com.HuangHaijian.controller;
 
-import com.HuangHaijian.dao.UserDao;
+import com.HuangHaijian.dao.Userdao;
 import com.HuangHaijian.model.User;
 
 import javax.servlet.*;
@@ -50,7 +50,7 @@ public class UpdateUserServlet extends HttpServlet {
         }
 
         User u = new User(Integer.parseInt(id), Username, Password, Email, Gender, BirthDate);
-        UserDao userDao = new UserDao();
+        Userdao userDao = new Userdao();
         try {
             userDao.updateUser((Connection) getServletContext().getAttribute("con"), u);
         } catch (SQLException e) {

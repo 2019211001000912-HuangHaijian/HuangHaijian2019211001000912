@@ -47,7 +47,7 @@ public class AddProductServlet extends HttpServlet {
 
         //get picture
         InputStream inputStream = null;
-        Part fileParts = request.getPart("picture");
+        Part fileParts=request.getPart("picture");
         if (fileParts != null) {
             inputStream = fileParts.getInputStream();
         }
